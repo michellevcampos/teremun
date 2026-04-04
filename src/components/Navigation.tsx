@@ -34,7 +34,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center gap-3">
-              <img src="/logo-teremun.png.png" alt="TEREMUN Logo" className="h-10 w-10" />
+              <img src="/logo-teremun.png" alt="TEREMUN Logo" className="h-10 w-10" />
               <span className="text-2xl font-bold text-teremun-dark">TEREMUN</span>
             </Link>
           </div>
