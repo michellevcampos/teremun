@@ -56,22 +56,24 @@ const Encargados = () => {
           {encargados.map((encargado, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <img
                 src={encargado.photo}
                 alt={encargado.name}
-                className="w-full h-80 object-cover mb-4"
+                className="w-full h-80 object-cover"
               />
-              <h3 className="text-xl font-bold text-teremun-dark text-center mb-2">
-                {encargado.name}
-              </h3>
-              <p className="text-teremun-gold font-semibold text-center mb-3">
-                {encargado.role}
-              </p>
-              <p className="text-teremun-mahogany text-center text-sm leading-relaxed">
-                {encargado.description}
-              </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-teremun-dark text-center mb-2">
+                  {encargado.name}
+                </h3>
+                <p className="text-teremun-gold font-semibold text-center mb-3">
+                  {encargado.role}
+                </p>
+                <p className="text-teremun-mahogany text-center text-sm leading-relaxed">
+                  {encargado.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

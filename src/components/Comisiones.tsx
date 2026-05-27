@@ -11,7 +11,7 @@ type CommissionCard = {
 };
 
 const Comisiones = () => {
-  const [openCategoria, setOpenCategoria] = useState('Ambientales');
+  const [openCategoria, setOpenCategoria] = useState('');
   const [selectedCard, setSelectedCard] = useState<CommissionCard | null>(null);
 
   const getGoogleDocPreviewUrl = (url: string) => {
