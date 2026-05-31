@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
   }
 
   body {
@@ -29,4 +30,47 @@
 
 .animate-fade-in {
   animation: fade-in 1s ease-out;
+}
+
+@keyframes overlay-soft-in {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(2px);
+  }
+}
+
+@keyframes modal-soft-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.975);
+    filter: blur(3px);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.005);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-overlay-soft-in {
+  animation: overlay-soft-in 260ms ease-out both;
+}
+
+.animate-modal-soft-pop {
+  animation: modal-soft-pop 340ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity, filter;
+}
+
+.font-dm-serif-display {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
 }
