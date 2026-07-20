@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, BookOpenText, Building2, Crown, Instagram, Music2, Pause, Play, Sparkles, UserRoundCheck, Users } from 'lucide-react';
+import { ArrowRight, BookOpenText, Building2, Crown, Instagram, Pause, Play, Sparkles, UserRoundCheck, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 type Countdown = {
@@ -27,7 +27,6 @@ const getCountdown = (): Countdown => {
 };
 
 const pad = (value: number) => value.toString().padStart(2, '0');
-
 const Hero = () => {
   const [countdown, setCountdown] = useState<Countdown>(() => getCountdown());
   const trailerVideoRef = useRef<HTMLVideoElement | null>(null);
@@ -287,15 +286,6 @@ const Hero = () => {
               <Instagram size={24} className="text-teremun-burgundy" />
               <span className="text-sm font-semibold text-teremun-dark">@teremun2026</span>
             </a>
-
-            <div
-              className="flex items-center gap-3 p-4 rounded-lg hover:bg-teremun-blush/40 transition-colors"
-              aria-label="TikTok próximamente"
-              title="TikTok próximamente"
-            >
-              <Music2 size={24} className="text-teremun-burgundy" />
-              <span className="text-sm font-semibold text-teremun-dark">TikTok (próximamente)</span>
-            </div>
           </div>
         </div>
       </section>

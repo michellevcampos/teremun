@@ -1,10 +1,10 @@
-import { useEffect, useState, type ComponentType } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { Building2, ExternalLink, Globe, Heart, Landmark, Leaf, Scale, Sparkles, X } from 'lucide-react';
+import { Building2, ExternalLink, Globe, Heart, Landmark, Leaf, Scale, Sparkles, X, type LucideIcon } from 'lucide-react';
 
 type CommissionCard = {
-  icon: ComponentType<{ className?: string; size?: number }>;
+  icon: LucideIcon;
   name: string;
   topic: string;
   description: string;
@@ -51,14 +51,37 @@ const Comisiones = () => {
 
   const leadershipPresidentFileByName: Record<string, string> = {
     'daniel cortes': 'Daniel Cortes.JPG',
+    'daniel cortes martinez': 'Daniel Cortes.JPG',
+    'maria jose restrepo': 'DSC02252.JPG',
+    'maria jose brinez': 'DSC02253.JPG',
+    'maria victoria galindo': 'DSC02257.JPG',
+    'david garcia beltran': 'DSC02258.JPG',
+    'david esteban garcia beltran': 'DSC02258.JPG',
+    'mariana vanegas portela': 'Mariana Vanegas.JPG',
+    'julietha rodriguez mogollon': 'DSC02266.JPG',
+    'julieta rodriguez mogollon': 'DSC02266.JPG',
+    'maria alejandra benavides': 'DSC02269.JPG',
+    'gabriela zabaleta': 'DSC02270.JPG',
+    'gabriela zabaleta manjarres': 'DSC02270.JPG',
+    'isabella otalora': 'DSC02272.JPG',
+    'luisa marino': 'Luisa Mariño.JPG',
+    'luisa fernanda marino': 'Luisa Mariño.JPG',
+    'miranda nunez': 'Miranda Núñez.JPG',
+    'miranda anastasia nunez': 'Miranda Núñez.JPG',
+    'paula pinzon': 'Paula Pinzón.JPG',
+    'paula alejandra pinzon': 'Paula Pinzón.JPG',
+    'isabella montufar': 'Isabella Montufar.JPG',
     'emily valeria martinez': 'Emily Martínez.JPG',
+    'emily valeria martinez reyes': 'Emily Martínez.JPG',
     'emily martinez': 'Emily Martínez.JPG',
     'luciana clavijo riccio': 'Luciana Clavijo.JPG',
     'luciana clavijo': 'Luciana Clavijo.JPG',
     'luis geronimo lievano': 'Luis Gerónimo Lievano.JPG',
+    'luis jeronimo lievano': 'Luis Gerónimo Lievano.JPG',
     'mariana medina': 'Mariana Medina.JPG',
     'maria jose berbesi': 'María José Berbesí.JPG',
-    'santiago rey': 'Santiago Rey.JPG'
+    'santiago rey': 'Santiago Rey.JPG',
+    'juanita reyes': 'Juanita Reyes.JPG'
   };
 
   const getPresidentNameWithoutCourse = (presidente: string) =>
@@ -305,7 +328,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1vxmd1UavL5CWsjpOUStwJAvlXm8BXlQV/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Sexto y Séptimo',
-            presidente: 'Luis Gerónimo Lievano 7B',
+            presidente: 'Luis Jerónimo Liévano 7B',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Estados Unidos de America', delegado: 'Tomas Serrano Neira', curso: '7A' },
@@ -340,13 +363,13 @@ const Comisiones = () => {
       cards: [
         {
           icon: Sparkles,
-          name: 'Betty la fea',
+          name: 'Superintendencia Financiera',
           topic: 'Comisión Especial',
           description: 'Ecomoda y Superintendencia.',
           documentUrl: 'https://docs.google.com/document/d/1KUBAmDN_Q_mfbiKB8fhJ910TKNLVwoMS/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Decimo y Undecimo',
-            presidente: 'Emily Valeria Martinez 11B',
+            presidente: 'Emily Valeria Martínez Reyes 11B',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Beatriz Pinzón Betty – Gerente financiera / analista contable', delegado: 'Ángelamaria López', curso: '11B' },
@@ -414,7 +437,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1P1riXvDPsUVA15q6OcL77n6besWDCW5L/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Octavo y Noveno',
-            presidente: 'Santiago Rey 11A',
+            presidente: 'Santiago Rey 11B',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Federación Argentina', delegado: 'Thomas Santiago Cuadrado', curso: '9B' },
@@ -450,7 +473,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1xCU_HI8G_oaJ1r7nfjUbdQqP2wBh6kj4/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Octavo y Noveno',
-            presidente: 'Luisa Marino 9A',
+            presidente: 'Luisa Fernanda Mariño 9A',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Juan Roa Sierra — Principal acusado del asesinato (Sospechoso)', delegado: 'Anna Sophia Yazo Maecha', curso: '9B' },
@@ -485,7 +508,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1JkXYTDJ8THYGCteFDZqlTlPK32i2J5af/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Octavo y Noveno',
-            presidente: 'Miranda Anastasia Nunez 8B',
+            presidente: 'Miranda Anastasia Núñez 8B',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Estados Unidos de America — Pais directamente afectado por los ataques.', delegado: 'Mateo Frezic Lopez', curso: '9B' },
@@ -521,7 +544,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1r5PdUOu3EruEkbUnrgpRRoBrGdrB0s0N/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Cuarto y Quinto',
-            presidente: 'Maria Jose Restrepo (5B)',
+            presidente: 'María José Restrepo (5B)',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Estados Unidos de America — Lidera exploracion espacial, satelites y cooperacion internacional.', delegado: 'Luciana Duarte', curso: '5B' },
@@ -564,7 +587,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1cSnbMw3j5UmwIirgIkJzLXpeFsbvSC25/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Octavo y Noveno',
-            presidente: 'Daniel Cortes 8C',
+            presidente: 'Daniel Cortés Martínez 8C',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Estados Unidos', delegado: 'José Manuel Marulanda', curso: '9B' },
@@ -644,7 +667,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1fvOOAfSaRLINhWLlvBOiimgRHuk1ICyV/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Decimo - Once - Invitados',
-            presidente: 'Isabella Montufar 10A',
+            presidente: 'Isabella Montúfar 10A',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Colombia' },
@@ -691,7 +714,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1cGze_M2dU9VY6VHCGsqY9GmuYaY7d73R/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Octavo y Noveno',
-            presidente: 'Gabriela Zabaleta 8C',
+            presidente: 'Gabriela Zabaleta Manjarrés 8C',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'Colombia', delegado: 'Isabella Restrepo', curso: '9B' },
@@ -825,7 +848,7 @@ const Comisiones = () => {
           documentUrl: 'https://docs.google.com/document/d/1QdueCSLXVpR4dzye6M_IkZjP9niN8qxM/edit?usp=sharing&ouid=117366139924779115759&rtpof=true&sd=true',
           members: {
             grupo: 'Sexto y Séptimo',
-            presidente: 'Julieta Rodríguez Mogollón 7A',
+            presidente: 'Julietha Rodríguez Mogollón 7A',
             secretarioPiso: '',
             delegaciones: [
               { delegacion: 'SHEIN', delegado: 'Valentina Hernández Moreno', curso: '7B' },
@@ -1143,10 +1166,13 @@ const Comisiones = () => {
                       <span className="font-semibold text-teremun-dark">Presidente:</span>{' '}
                       <button
                         type="button"
-                        onClick={() => handlePresidentNavigation(selectedCard.members.presidente)}
+                        onClick={() => {
+                          if (!selectedCard.members) return;
+                          handlePresidentNavigation(selectedCard.members.presidente);
+                        }}
                         className="font-medium text-teremun-burgundy underline decoration-teremun-burgundy/50 underline-offset-2 hover:text-teremun-dark hover:decoration-teremun-dark transition-colors"
                       >
-                        {selectedCard.members.presidente}
+                        {selectedCard.members?.presidente || '-'}
                       </button>
                     </div>
                     <div className="px-4 py-2 border-t border-teremun-burgundy/20 text-sm">
