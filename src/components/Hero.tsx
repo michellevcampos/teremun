@@ -153,7 +153,7 @@ const Hero = () => {
             <div className="max-w-6xl mx-auto">
               <div
                 ref={trailerContainerRef}
-                className="group relative h-[56vh] sm:h-[64vh] lg:h-[72vh] overflow-hidden rounded-2xl shadow-xl bg-transparent"
+                className="group relative h-[32vh] sm:h-[56vh] lg:h-[72vh] overflow-hidden rounded-2xl shadow-xl bg-transparent"
                 onMouseEnter={() => setIsVideoHovered(true)}
                 onMouseLeave={() => setIsVideoHovered(false)}
               >
