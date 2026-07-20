@@ -35,7 +35,7 @@ const TeremunKids = () => {
                   <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-sm">✓</span>
                   </div>
-                  <span>Estudiantes de preescolar hasta 3ro grado de primaria</span>
+                  <span>Estudiantes desde preescolar hasta 3ro de primaria</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">

@@ -159,8 +159,8 @@ const Hero = () => {
               >
                 <video
                   ref={trailerVideoRef}
-                  className="w-full h-full object-cover scale-[1.01]"
-                  style={{ objectPosition: '50% 53%', clipPath: 'inset(0 0 2px 0)' }}
+                  className="w-full h-full md:object-cover object-contain"
+                  style={{ objectPosition: '50% 53%' }}
                   src="/Trailer Teremun.mov"
                   loop
                   playsInline
